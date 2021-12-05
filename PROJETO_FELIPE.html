@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FaceCode</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/javascript.js"></script>
+    
+
+</head>
+<body>
+
+<!-- TOPO E TITULOS COMO NOME DO WEBSITE -->
+	<br> <br> <!-- USADO PARA PULAR LINHA    -->
+	
+	<header id="topo">
+	
+		<section id="titulo" >
+			
+			<h1>FACECODE</h1>
+			
+			<h2> CADASTRE-SE AQUI </h2>
+
+<!-- FIM TOPO E TITULOS COMO NOME DO WEBSITE -->			
+		</section>	
+	</hr>
+	
+	<!-- =================================================================================================== -->
+	
+	<!-- ÁREA DE LOGIN -->
+			<hgroup id="alogin">
+			
+				<input type="text" placeholder="USUARIO" id="usuario"/> <hr/>  <!-- USUARIO -->
+				<input type="password" placeholder="SENHA" id="senha"/> <hr/> <!-- SENHA -->
+				
+				<button onClick="login();"> OK </button> <!-- BOTÃO OK -->
+	<!-- FIM ÁREA DE LOGIN -->
+			
+			</hgroup>
+        <hgroup id="alogado">
+			<p id="nome_logado">SEJA BEM VINDO</p>
+		</hgroup>
+	</header>
+    
+	<!-- =================================================================================================== -->
+	
+	
+	<!-- ÁREA DE CADASTRO -->
+	<div id="Cadastro">
+		<h2>Ainda não tem uma CODECONTA? <br/>Cadastre-se abaixo:</h2>
+    	<input type="text" placeholder="SEU NOME" id="nome_cad"/><br/>
+		<input type="text" placeholder="E-MAIL" id="email_cad"/><br/>
+        <input type="text" placeholder="USUARIO" id="user_cad" /><br/>
+        <input type="password" placeholder="SENHA" id="senha_cad" /><br/>
+        <input type="password" placeholder="CONFIRME A SENHA" id="rep_senha_cad"/><br/>
+        <button onClick="cadastrar()">CADASTRAR</button>
+    </div>
+	<!-- FIM ÁREA DE CADASTRO -->	
+	
+	<!-- =================================================================================================== -->
+	
+	<!-- PERFIS DE USUSARIOS -->
+	
+	<div id="usuarios" >		
+		
+        <section id="banner_perfil">
+        	<button onClick="altBanner()">ALTERAR</button>
+        </section>
+		<hgroup id="ftEnm_perfil">
+            <section id="ft_perfil" onclick="altFoto()">
+                <img src="img/foto.png" />
+            </section>
+            
+            <section id="nome_perfil">
+            	<h1 id="nm_perfil">Felipe Pinheiro</h1>
+                <h2 id="apelido_perfil">Bacu</h2>
+            </section>
+        </hgroup>	    
+		
+		<section id="dados_perfil">
+			<li><p class="titulo"><strong>sobre</strong><img src="img/edit.png" alt="Alterar Sobre" onClick="alterarPerfil('sobre')"/></p></li>
+            <p id="dados_desc">Sou Homem, tenho 22 anos, e sou um atleta em otima forma fisica </p>
+			<ul>
+				<li><p class="titulo"><strong>Interesses</strong><img src="img/edit.png" alt="Alterar Interesses" onClick="alterarPerfil('interesses')"/></p>
+					<ul>
+						<li id="inter_sexo">mulheres</li>
+						<li id="inter_fisico">nao sedentarias</li>
+						<li id="inter_esporte">que praticam esportes</li>
+					</ul>
+				</li>
+				<li><p class="titulo"><strong>Hobbie</strong><img src="img/edit.png" alt="Alterar Hobbie" onClick="alterarPerfil('hobbie')"/></p>
+					<ol>
+						<li id="hobbie_Corredor">Corredor</li>
+						<li id="hobbie_profissional">Não Profissional</li>
+					</ol>
+				</li>
+				<li><p class="titulo"><strong>Escolas onde estudei</strong><img src="img/edit.png" alt="Alterar Escolas" onClick="alterarPerfil('escola')"/></p>
+					<ol>
+						<li id="escola_primaria">Escola Primária Bento Jr.</li>
+						<li id="escola_secundaria">Escola Secundária Neto Sr.</li>
+						<li id="faculdade" >Universidade de Harvard (BA)</li>
+					</ol>
+				</li>
+				<li><p class="titulo"><strong>Citações Favoritas</strong><img src="img/edit.png" alt="Alterar Citação" onClick="alterarPerfil('citacao')"/></p></li>
+					<ul>
+						<li id="frase_favorita">"Se você não obtiver sucesso na primeira tentativa, tente novamente"</li>
+                    </ul>
+          </ul>
+                    
+		</section>	
+        
+        <!-- POSTAGENS  -->
+        <hgroup id="postagens">
+            <section id="postagem">
+                <h1>POSTAGEM</h1>
+                <textarea id="txtPostagem" name="Mensagem" placeholder="Conte-nos algo..."></textarea>
+                <button class="publicar" onclick="publicar()">Publicar</button>
+            </section>	
+            <hgroup id="postagens_publicadas">
+			
+			</hgroup>    
+            <!--<section id="postagem">
+                <section id="postagem_foto"></section>
+                <section id="postagem_conteudo">
+                	<h2>FELIPE PINHEIRO</h2>
+                   	<h3>postado em 26/06/2021 às 16:48</h3>
+                    <p>
+    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+                    
+                </section>
+        	</section> -->
+         </hgroup>  	
+	</div>
+	
+	<!-- FIM PERFIS DE USUSARIOS -->
+	
+	<!-- ===========================================================================================================================-->
+	
+	
+            
+    <footer id="rodape">
+    	<p>FACECODE - Todos os direitos reservados 2021</p>
+    </footer>        
+			
+</body>
+
+</html>
